@@ -1,0 +1,141 @@
+.posts_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .post {
+    display: flex;
+    width: calc(50% - 20px);
+    margin: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post_image {
+    width: 40%;
+  }
+  
+  .post_image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+  
+  .post_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding: 20px;
+  }
+  
+  .post_content h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+  
+  
+  .read_more {
+    width: 100%;
+    background-color: #036c5c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .read_more:hover {
+    background-color: #034b40;
+  }
+
+
+  /* Blog Posts */
+  .post-details {
+    padding: 40px;
+    background-color: #f7f7f7;
+    font-size: 24px;
+    line-height: 2;
+  }
+  
+  .post-details h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+  
+  .post-details-content {
+    margin-top: 20px;
+  }
+  
+  .text-details-image, .text-image-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: flex-start;
+  }
+  .post-details-content p:first-child::first-letter {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+  }
+  .text-details-image p, .text-image-details p {
+    width: 60%;
+    font-size: 26px;
+  }
+  
+  .text-details-image img, .text-image-details img {
+    width: 30%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .post-details-content p {
+    margin-bottom: 20px;
+  }
+  /* Media Query */
+  
+  @media (max-width: 768px) {
+    .text-image {
+      flex-direction: column;
+    }
+    
+    .text-image p {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .text-image img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+  
+  /* Media Query */
+  @media (max-width: 900px) {
+    .post {
+        width: 100%;
+      }
+  }
+  @media (max-width: 768px) {
+    .text-details-image, .text-image-details {
+        flex-direction: column;
+      }
+      
+      .text-details-image p, .text-image-details p {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      
+      .text-details-image img, .text-image-details img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+      }
+  }
